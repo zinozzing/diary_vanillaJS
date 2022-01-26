@@ -1,1 +1,1 @@
-# WebPrac_VanillaJS
+# 바닐라 JS를 활용해서 다이어리 & 일정관리 웹 만들기
