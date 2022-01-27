@@ -19,6 +19,32 @@ body {
     "note saying aside";
 }
 
+input {
+  width: 250px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+button {
+  margin: 5px;
+  margin-left: 10px;
+}
+
+input::-webkit-input-placeholder {
+  text-align: center;
+}
+
+li {
+  margin: 10px;
+  font-size: 20px;
+  line-height: 30px;
+  list-style-type: none;
+}
+
+#greeting {
+  margin: 0;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -59,7 +85,9 @@ body {
   margin-top: 5%;
   opacity: 0.8;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
 }
 
 .title {
