@@ -8,5 +8,17 @@ function getClock() {
   clock.innerText = `${hours}:${minutes}:${seconds}`;
 }
 
+const day = document.querySelector("h1.days");
+
+function getNowDays() {
+  const years = new Date().getFullYear();
+  const months = new Date().getMonth() + 1;
+  const days = new Date().getDate();
+  const week = new Date().getDay();
+  const weekDays = ["일", "월", "화", "수", "목", "금", "토"];
+  day.innerText = `${years}년 ${months}월 ${days}일(${weekDays[week]})`;
+}
+
 getClock();
 setInterval(getClock, 1000);
+getNowDays();
